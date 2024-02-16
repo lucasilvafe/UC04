@@ -16,9 +16,16 @@ formulario.addEventListener('submit', (event) => {
 
     const email = (document.getElementById('email') as HTMLInputElement).value;
 
-    console.log(nome)
-    console.log(telefone)
-    console.log(dataNascimento)
-    console.log(cpf)
-    console.log(email)
+    const dados = `
+    Nome: ${nome}<br>
+    Telefone: ${telefone}<br>
+    Data de nascimento: ${dataNascimento}<br>
+    CPF ${cpf}<br>
+    E-mail ${email}
+    `
+    const exibir = document.getElementById('resposta');
+    if (exibir)
+    {
+        exibir.innerHTML = dados
+    }
 });
