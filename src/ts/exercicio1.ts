@@ -1,3 +1,4 @@
+//Hospital chega doente sai bom
 class Funcionario {
     nome: string;
     email: string;
@@ -43,7 +44,7 @@ class Paciente
     constructor(paciente: string, cpf: string, crtaosus: string, endereco: string, telefone: string)
     {
         this.paciente = paciente;
-        this.
+        this.crtaosus = crtaosus;
         this.cpf = cpf;
         this.telefone = telefone;
         this.endereco = endereco;
