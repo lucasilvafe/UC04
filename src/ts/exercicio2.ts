@@ -10,9 +10,16 @@ class CadastroLivro {
         this.autor = autor;
         this.publicacao = publicacao;
     }
+    cadastroLivro()
+    {
+        console.log(`Cadastro de Livros`)
+        console.log(`Nome: ${this.nome}`)
+        console.log(`Autor: ${this.autor}`)
+        console.log(`Data de Publicação: ${this.publicacao}`)
+    }
 }
 const cadastrolivro1 = new CadastroLivro('Clean Code', 'Robert Cecil Martin', new Date('2008-7-8'))
-console.log(cadastrolivro1)
+console.log(cadastrolivro1.cadastroLivro())
 
 class CadastroUsuario {
     nome: string;
@@ -26,6 +33,11 @@ class CadastroUsuario {
         this.cpf = cpf;
         this.telefone = telefone;
         this.endereco = endereco;
+    }
+    cadastroUsuario()
+    {
+        console.log('Cadastro do Usuario')
+        console.log(`Nome do `)
     }
 }
 const cadastrousuario1 = new CadastroUsuario('Lucas', '3353925524', '46663646', ['Rua quadrada', 'Av. redonda', 234])
