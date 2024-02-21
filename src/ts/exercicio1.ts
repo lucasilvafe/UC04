@@ -16,7 +16,7 @@ class Funcionario {
     }
     mostraDados()
     {
-        console.log(`Dado do funcionario:\n`)
+        console.log(`Dado do funcionario:`)
         console.log(`Nome: ${this.nome}`)
         console.log(`E-mail: ${this.email}`)
         console.log(`Telefone: ${this.telefone}`)
@@ -41,7 +41,7 @@ class Consultas {
     }
     mostraDadosConsulta()
     {
-        console.log(`Dado da Consulta:\n`)
+        console.log(`Dado da Consulta:`)
         console.log(`Data: ${this.data}`)
         console.log(`Local: ${this.local}`)
         console.log(`Convenio: ${this.convenio}`)
@@ -67,7 +67,7 @@ class Paciente {
     }
     mostrarDadosPaciente()
     {
-        console.log(`Dado do Pciente:\n`)
+        console.log(`Dado do Pciente:`)
         console.log(`Nome: ${this.paciente}`)
         console.log(`E-mail: ${this.cpf}`)
         console.log(`Telefone: ${this.telefone}`)
