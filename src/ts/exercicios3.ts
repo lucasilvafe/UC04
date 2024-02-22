@@ -1,29 +1,56 @@
 // Banco dinheiro seguro
-class CadastroConta {
-    saldo: string;
-    conta: string;
-    titularconta: string;
-    agencia: string;
-    
-    // Metodo construtor
-    constructor(saldo: string, conta: string, titularconta: string, agencia: string)
+class Conta
+{
+    constructor(
+        public corrente: boolean,
+        public poupanca: boolean,
+        public salario: boolean
+    ){}
+    mostrarDadosConta()
     {
-        this.saldo = saldo;
-        this.conta = conta;
-        this.titularconta = titularconta;
-        this.agencia = agencia;
-    }
-    cadastroConta()
-    {
-        console.log(`Cadastro`)
-        console.log(`Saldo da Conta: ${this.saldo}`)
-        console.log(`Numero da Conta: ${this.conta}`)
-        console.log(`Titular da Conta: ${this.titularconta}`)
-        console.log(`Agencia bancaria: ${this.agencia}`)
+        console.log('Conta')
+        console.log(`Conta Corrente: ${this.corrente}`)
+        console.log(`Conta Poupança: ${this.poupanca}`)
+        console.log(`Conta Salário: ${this.salario}`)
     }
 }
-const cadastroconta = new CadastroConta('324', '2343455353', 'Lucas', '12')
-console.log(cadastroconta.cadastroConta())
+const conta = new Conta(true,false,false)
+console.log(conta.mostrarDadosConta())
+
+class Cliente
+{
+    constructor(
+        public saldo: string,
+        public numero_conta: string,
+        public titularconta: string,
+        public agencia: number
+        ) { }
+        mostrarDadosCliente()
+        {
+            console.log(`Dados da conta`)
+            console.log(`Saldo: ${this.saldo}`)
+            console.log(`Numero da conta: ${this.numero_conta}`)
+            console.log(`Titular da conta: ${this.titularconta}`)
+            console.log(`Agencia ${this.agencia}`)
+            console.log(`============================`)
+        }
+}
+
+const cliente = new Cliente('4535', '53434', 'Lucas', 55)
+console.log(cliente.mostrarDadosCliente())
+
+class Fisica extends Conta
+{
+    constructor(
+        public nome: string
+        ){
+            super()
+         }
+    mostraDadosConta()
+    {
+        super.mostrarDadosConta()
+    }
+}
 
 class ControleDespesas {
     transferencias: string;
@@ -49,7 +76,7 @@ class ControleDespesas {
     }
 }
 const controle_despesas = new ControleDespesas('23', '2', '74', '12')
-console.log(controle_despesas.controleDespesas())
+
 
 class Planejamento {
     poupanca: string;
@@ -66,4 +93,3 @@ class Planejamento {
     }
 }
 const planejamento = new Planejamento('500')
-console.log(planejamento.planejamento())
