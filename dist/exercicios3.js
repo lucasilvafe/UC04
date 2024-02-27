@@ -1,3 +1,4 @@
+"use strict";
 /* // Banco dinheiro seguro
 class Conta
 {
@@ -93,4 +94,4 @@ class Planejamento {
     }
 }
 const planejamento = new Planejamento('500')
- */
+ */ 

@@ -1,3 +1,4 @@
+"use strict";
 /* // Sem bagunça
 class CadastroProjeto {
     projetos_andamento: string;
@@ -39,4 +40,4 @@ class ControleTarefas {
     }
 }
 const controle_tarefas = new ControleTarefas('Limpar tudo', 'Limpa Tgeral', 'limpar', 'Lucas')
-console.log(controle_despesas.controleDespesas()) */
+console.log(controle_despesas.controleDespesas()) */ 

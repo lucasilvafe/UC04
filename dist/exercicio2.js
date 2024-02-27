@@ -1,3 +1,4 @@
+"use strict";
 /* // Leitura Certa
 class CadastroLivro {
     constructor(
@@ -57,4 +58,4 @@ class EmprestimoLivro extends CadastroLivro {
 
     }
     const emprestimolivro1 = new EmprestimoLivro('Lucas', '3353925524', '46663646', 3, new Date('2024-1-3'), new Date('2024-2-2'))
-emprestimolivro.mostrarEmpretimo() */
+emprestimolivro.mostrarEmpretimo() */ 

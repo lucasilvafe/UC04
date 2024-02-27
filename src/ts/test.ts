@@ -1,1 +1,1 @@
-import {exercicio1.Pessoa} '../ts/exercicio1'
+//import {exercicio1.Pessoa} '../ts/exercicio1'
